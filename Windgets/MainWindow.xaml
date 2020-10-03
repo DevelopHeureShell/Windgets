@@ -1,0 +1,29 @@
+﻿<Window x:Class="Windgets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windgets"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="icon.png" Background="Black"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="408*"/>
+        </Grid.RowDefinitions>
+        <Button  x:Name="Time" Content="Heure" HorizontalAlignment="Left" Margin="10,98.566,0,0" VerticalAlignment="Top" Width="202" Click="Time_Click" Height="41" Background="#FF323232" Foreground="White" Grid.Row="1" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
+        <Button x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="220,98.566,0,0" VerticalAlignment="Top" Width="202" Click="Date_Click" Height="41" Background="#FF323232" Foreground="White" Grid.Row="1" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
+        <Button x:Name="pic" Content="Image" HorizontalAlignment="Left" Margin="432,98.566,0,0" VerticalAlignment="Top" Width="202" Click="pic_Click" Height="41" Background="#FF323232" Foreground="White" Grid.Row="1" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
+        <Button x:Name="sti" Content="Sticker" HorizontalAlignment="Left" Margin="10,149.566,0,0" VerticalAlignment="Top" Width="202" Click="sti_Click"  Height="41" Background="#FF323232" Foreground="White" Grid.Row="1" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
+        <Label Content="Windgets" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="48" Grid.RowSpan="2"/>
+        <Label Content="Basique" HorizontalAlignment="Left" Margin="10,62.566,0,0" VerticalAlignment="Top" Background="Black" Foreground="#FF7E7E7E" FontSize="16" Grid.Row="1"/>
+
+    </Grid>
+</Window>
