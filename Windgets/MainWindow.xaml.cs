@@ -51,6 +51,9 @@ namespace Windgets
             sticker.Show();
         }
 
-
+        private void git_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/sumokai-git");
+        }
     }
 }

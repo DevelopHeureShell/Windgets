@@ -12,7 +12,7 @@
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     FontFamily="{DynamicResource MaterialDesignFont}">
+     FontFamily="{DynamicResource MaterialDesignFont}" ShowInTaskbar="False">
     <Grid x:Name="Grid1" Margin="0,0,2,2">
         <Label x:Name="datelabel" Content="Chargement..." HorizontalAlignment="center" VerticalAlignment="center" Foreground="White" FontSize="48" Background="{x:Null}" FontWeight="Thin" FontFamily="Segoe UI" />
         <Grid.ContextMenu>

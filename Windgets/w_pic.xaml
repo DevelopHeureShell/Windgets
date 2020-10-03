@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Windgets"
         mc:Ignorable="d"
-        Title="Windgets : Date" Height="219.395" Width="414.057" Background="{x:Null}" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
+        Title="Windgets : Picture" Height="219.395" Width="414.057" Background="{x:Null}" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
@@ -17,8 +17,8 @@
         <Grid.ContextMenu>
             <ContextMenu>
 
-                <MenuItem Header="Fermer"  Click="fermer"/>
                 <MenuItem Header="Source"  Click="source"/>
+                <MenuItem Header="Fermer"  Click="fermer"/>
             </ContextMenu>
         </Grid.ContextMenu>
         <Grid.ColumnDefinitions>
