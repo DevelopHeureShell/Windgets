@@ -4,10 +4,10 @@ Windgets est une application open-source pour Windows (7 SP 1/8.1/10) qui a pour
 
 # Télécharger
 
-## 1.0.0-a.1
+## Versions Alpha
 
-```bash
-PROCHAINEMENT
+```bas
+1.0.0-a.1(DEVE) : https:h//mega.nz/file/96oBgYrQ#J1PgEjF2_SCs0sTxn2oTb4tkd93sA_fF5Ovq_wVXpRs
 ```
 ## Contributions
 Windgets a été crée individuellement par [Sumokai](https://twitter.com/sumokai_)
