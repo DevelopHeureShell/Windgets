@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Windgets"
         mc:Ignorable="d"
-        Title="Windgets : Time" Height="219.395" Width="414.057" Background="#FF171717" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
+        Title="Windgets : Time" Height="219.395" Width="414.057" Background="Black" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     FontFamily="{DynamicResource MaterialDesignFont}">
+     FontFamily="{DynamicResource MaterialDesignFont}" ShowInTaskbar="False">
     <Grid x:Name="Grid1" Margin="0,0,2,2">
         <Label x:Name="timelabel" Content="Chargement..." HorizontalAlignment="center" VerticalAlignment="center" Foreground="White" FontSize="48" Background="{x:Null}" FontWeight="Thin" FontFamily="Segoe UI" />
         <Grid.ContextMenu>

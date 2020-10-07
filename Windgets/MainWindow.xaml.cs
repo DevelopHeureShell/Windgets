@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Schema;
 
+
 namespace Windgets
 {
     /// <summary>
@@ -24,36 +25,47 @@ namespace Windgets
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void Time_Click(object sender, RoutedEventArgs e)
+
+
+        private void PackIcon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            about about = new about();
+            about.Show();
+        }
+
+
+
+        private void Time_Click_1(object sender, RoutedEventArgs e)
         {
             w_time time = new w_time();
             time.Show();
         }
 
-
-        private void Date_Click(object sender, RoutedEventArgs e)
+        private void Date_Click_1(object sender, RoutedEventArgs e)
         {
             w_date date = new w_date();
             date.Show();
         }
 
-        private void pic_Click(object sender, RoutedEventArgs e)
+        private void pic_Click_1(object sender, RoutedEventArgs e)
         {
             w_pic pic = new w_pic();
             pic.Show();
         }
 
-        private void sti_Click(object sender, RoutedEventArgs e)
+        private void sti_Click_1(object sender, RoutedEventArgs e)
         {
             w_sticker sticker = new w_sticker();
             sticker.Show();
         }
 
-        private void git_Click(object sender, RoutedEventArgs e)
+        private void custom_Click_1(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/sumokai-git");
+            custom custom = new custom();
+            custom.Show();
         }
     }
 }

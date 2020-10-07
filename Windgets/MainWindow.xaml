@@ -5,29 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Windgets"
         mc:Ignorable="d"
-        Title="Windgets" Height="250" Width="680" Icon="icon.png"
+        Title="Windgets" Height="206" Width="442.989" Icon="icon.png"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     FontFamily="{DynamicResource MaterialDesignFont}" MinWidth="680" MinHeight="250" Background="White" MaxWidth="680" MaxHeight="250" ResizeMode="NoResize">
-    <Grid Height="217" VerticalAlignment="Top">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="85*"/>
-            <ColumnDefinition Width="132*"/>
-        </Grid.ColumnDefinitions>
-
-        <Button  x:Name="Time" Content="Heure" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="202" Click="Time_Click" Height="41" Background="#FF323232" Foreground="White" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
-        <Button x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="220,99,0,0" VerticalAlignment="Top" Width="202" Click="Date_Click" Height="41" Background="#FF323232" Foreground="White" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E" Grid.ColumnSpan="2"/>
-        <Button x:Name="pic" Content="Image" HorizontalAlignment="Left" Margin="169,99,0,0" VerticalAlignment="Top" Width="202" Click="pic_Click" Height="41" Background="#FF323232" Foreground="White" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E" Grid.Column="1"/>
-        <Button x:Name="sti" Content="Sticker" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="202" Click="sti_Click"  Height="41" Background="#FF323232" Foreground="White" FontFamily="{DynamicResource MaterialDesignFont}" BorderBrush="#FF3E3E3E"/>
-        <Label Content="Windgets" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Margin="0,6,0,0"/>
-        <Label Content="Basique" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF2C2C2C" FontSize="16" />
-        <Button x:Name="git" Content="Github" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top" Width="78" Height="22" Background="#FF444444" BorderBrush="#FF3E3E3E" Click="git_Click" />
-        <Label Content="v.1.0.0-a DEVE" HorizontalAlignment="Left" Margin="285.569,190,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF2C2C2C" FontSize="16" />
-        <Label Content="v.1.0.0-a.1 (DEVE)" HorizontalAlignment="Left" Margin="265,180,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF2C2C2C" FontSize="16" Width="135" Grid.Column="1" />
+     MinWidth="680" Background="Black" MaxWidth="680" MaxHeight="250" ResizeMode="NoResize" MinHeight="206" >
+    <Grid >
+        <materialDesign:PackIcon  Margin="631,10,0,0"  Kind="InfoCircle" Height="Auto" Width="29" MouseDoubleClick="PackIcon_MouseDoubleClick" Foreground="White"/>
+        <Button x:Name="Time" Content="Heure" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="125" Height="73" Background="White" BorderBrush="#FFAEAEAE" Foreground="#DD000000" Click="Time_Click_1"/>
+        <Button x:Name="Date" Content="Date" HorizontalAlignment="Left" Margin="140,73,0,0" VerticalAlignment="Top" Width="125" Height="73" Background="White" BorderBrush="#FF999999" Foreground="#DD000000" Click="Date_Click_1"/>
+        <Button x:Name="pic" Content="Image" HorizontalAlignment="Left" Margin="272,73,0,0" VerticalAlignment="Top" Width="125" Height="73" Background="White" BorderBrush="#FF7C7C7C" Foreground="#DD000000" Click="pic_Click_1"/>
+        <Button x:Name="sti" Content="Sticker" HorizontalAlignment="Left" Margin="402,73,0,0" VerticalAlignment="Top" Width="125" Height="73" Background="White" BorderBrush="#FF6E6E6E" Foreground="#DD000000" Click="sti_Click_1"/>
+        <Button x:Name="custom" Content=" personnalisé" HorizontalAlignment="Left" Margin="532,73,0,0" VerticalAlignment="Top" Width="125" Height="73" Background="White" BorderBrush="#FF979797" Foreground="#DD000000" Click="custom_Click_1"/>
+        <Label Content="Windgets" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#DDFFFFFF" FontSize="36" Height="58" Width="191"/>
 
     </Grid>
 </Window>

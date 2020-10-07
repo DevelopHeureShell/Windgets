@@ -1,11 +1,11 @@
-﻿<Window x:Class="Windgets.w_date"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="Windgets.custom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Windgets"
         mc:Ignorable="d"
-        Title="Windgets : Date" Height="219.395" Width="414.057" Background="Black" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
+        Title="Windgets : Custom" Height="219.395" Width="414.057" Background="Black" MouseDown="Window_MouseDown" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Icon="icon.png"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
@@ -14,17 +14,10 @@
      TextOptions.TextRenderingMode="Auto"
      ShowInTaskbar="False">
     <Grid x:Name="Grid1" Margin="0,0,2,2">
-        <Label x:Name="datelabel" Content="Chargement..." HorizontalAlignment="center" VerticalAlignment="center" Foreground="White" FontSize="48" Background="{x:Null}" FontWeight="Thin" FontFamily="Segoe UI" />
+
         <Grid.ContextMenu>
             <ContextMenu>
                 <MenuItem Header="Texte">
-                    <MenuItem Header="Couleurs">
-                        <MenuItem Header="Blanc (par défaut)" Click="blanc"/>
-                        <MenuItem Header="Bleu" Click="bleu"/>
-                        <MenuItem Header="Rouge" Click="rouge" />
-                        <MenuItem Header="Jaune" Click="jaune" />
-                        <MenuItem Header="Vert" Click="vert" />
-                    </MenuItem>
                     <MenuItem Header="Taille">
                         <MenuItem Header="10" Click="font10"/>
                         <MenuItem Header="12" Click="font12"/>
@@ -43,8 +36,13 @@
                         <MenuItem Header="Orbitron" Click="orb" FontFamily="Orbitron"/>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Fermer"  Click="fermer"/>
+                <MenuItem Header="Texte personnalisé">
+                    <TextBox Width="60" x:Name="text" TextChanged="text_TextChanged_1" MaxLength="60" />
+                </MenuItem>
+                    <MenuItem Header="Fermer"  Click="fermer"/>
+                
             </ContextMenu>
         </Grid.ContextMenu>
+        <Label  HorizontalContentAlignment="Center" x:Name="label" Content="Chargement..." HorizontalAlignment="center" VerticalAlignment="center" Foreground="White" FontSize="48" Background="{x:Null}" FontWeight="Thin" FontFamily="Segoe UI"  />
     </Grid>
 </Window>
